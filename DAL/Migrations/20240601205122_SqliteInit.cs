@@ -5,7 +5,7 @@
 namespace DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigrationDB : Migration
+    public partial class SqliteInit : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -14,11 +14,11 @@ namespace DAL.Migrations
                 name: "TodoItems",
                 columns: table => new
                 {
-                    Id = table.Column<long>(type: "bigint", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Complete = table.Column<bool>(type: "bit", nullable: false)
+                    Id = table.Column<long>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Title = table.Column<string>(type: "text", nullable: true),
+                    Description = table.Column<string>(type: "text", nullable: true),
+                    Complete = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {

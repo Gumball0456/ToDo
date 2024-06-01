@@ -4,14 +4,87 @@
     "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/TodoApp/TodoApp.csproj": {}
   },
   "projects": {
-    "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/TodoApp/TodoApp.csproj": {
+    "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/DAL/DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/TodoApp/TodoApp.csproj",
-        "projectName": "TodoApp",
-        "projectPath": "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/TodoApp/TodoApp.csproj",
+        "projectUniqueName": "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/DAL/DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/DAL/DAL.csproj",
         "packagesPath": "/home/samuka/.nuget/packages/",
-        "outputPath": "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/TodoApp/obj/",
+        "outputPath": "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/DAL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/samuka/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/Model/Model.csproj": {
+                "projectPath": "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/Model/Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/nix/store/hkh5l0xbfbcc9x63y9z2kxgj04fpb402-dotnet-sdk-8.0.101/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/Model/Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/Model/Model.csproj",
+        "projectName": "Model",
+        "projectPath": "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/Model/Model.csproj",
+        "packagesPath": "/home/samuka/.nuget/packages/",
+        "outputPath": "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/Model/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/samuka/.nuget/NuGet/NuGet.Config"
@@ -37,7 +110,76 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/nix/store/hkh5l0xbfbcc9x63y9z2kxgj04fpb402-dotnet-sdk-8.0.101/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/TodoApp/TodoApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/TodoApp/TodoApp.csproj",
+        "projectName": "TodoApp",
+        "projectPath": "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/TodoApp/TodoApp.csproj",
+        "packagesPath": "/home/samuka/.nuget/packages/",
+        "outputPath": "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/TodoApp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/samuka/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/DAL/DAL.csproj": {
+                "projectPath": "/home/samuka/Documents/college/third/second_semester/aw/learning/ToDo/DAL/DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
